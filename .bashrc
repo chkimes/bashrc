@@ -5,6 +5,7 @@ alias gl="git log"
 alias gd="git diff"
 alias gdc="git diff --cached"
 
+# gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
 function gclean () {
 	CLEAN='git clean -f -x -d -e *.csproj.user -e _ReSharper* -e ignored/'
 	if [ "$1" = "please" ]; then
