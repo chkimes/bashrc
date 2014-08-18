@@ -4,6 +4,7 @@ alias gc="git commit"
 alias gl="git log"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gundo="git reset @^"
 
 function gclean () {
 	CLEAN='git clean -f -x -d -e *.csproj.user -e _ReSharper* -e ignored/'
