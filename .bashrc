@@ -4,6 +4,7 @@ alias gc="git commit"
 alias gl="git log"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gdl="git diff @^ @"  #diff last
 alias gundo="git reset @^"
 
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
