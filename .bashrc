@@ -4,7 +4,6 @@ alias gc="git commit"
 alias gl="git log"
 alias gd="git diff"
 alias gdc="git diff --cached"
-alias gdl="git diff @^ @"  #diff last
 alias gundo="git reset @^"
 
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
@@ -27,3 +26,17 @@ function gnuke () {
 	fi
 }
 
+function gdl () {
+	FROM=$1
+	if [ "$1" = "" ]; then
+		FROM=1
+	fi
+
+	ACCENTS=""
+	while [ $FROM -gt 1 ]; do
+		ACCENTS="$ACCENTS^"
+		FROM=$((FROM-1))
+	done
+
+	git diff @$ACCENTS^ @$ACCENTS
+}
