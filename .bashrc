@@ -38,5 +38,5 @@ function gdl () {
 		FROM=$((FROM-1))
 	done
 
-	git diff @$ACCENTS^ @$ACCENTS
+	git log -p -1 @$ACCENTS
 }
