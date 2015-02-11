@@ -9,7 +9,7 @@ alias gundo="git reset @^"
 
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
 function gclean () {
-	CLEAN='git clean -f -x -d -e *.csproj.user -e _ReSharper* -e ignored/'
+	CLEAN='git clean -f -x -d -e *.csproj.user -e *.pubxml.user -e _ReSharper* -e ignored/'
 	if [ "$1" = "please" ]; then
 		$CLEAN
 	else
