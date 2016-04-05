@@ -7,6 +7,7 @@ alias gls="gl --simplify-by-decoration"
 alias gd="git diff"
 alias gdc="git diff --cached"
 alias gundo="git reset @^"
+alias gmc="find -name '*.orig' | xargs -r rm" #merge cleanup
 
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
 function gclean () {
