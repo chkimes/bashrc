@@ -1,5 +1,6 @@
 alias gs="git status"
 alias ga="git add -A"
+alias gap="ga -p"
 alias gc="git commit"
 alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(bold cyan) %an  %C(dim green)(%ar)%n        %C(white)%s%n%C(dim yellow)%d%C(reset)' --all"
 alias gls="gl --simplify-by-decoration"
