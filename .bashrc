@@ -47,3 +47,7 @@ function gdl () {
 function gdmb () {
 	git diff $(git merge-base $1 $2) $2
 }
+
+function gfo () {
+	git fetch . origin/$1:$1
+}
