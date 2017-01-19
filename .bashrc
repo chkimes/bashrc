@@ -55,3 +55,7 @@ function gdmb () {
 function gfo () {
 	git fetch . origin/$1:$1
 }
+
+function gfd () {
+	git fetch . `git rev-parse --abbrev-ref HEAD`:$1
+}
