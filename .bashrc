@@ -49,10 +49,6 @@ function gdl () {
 	git log -p -1 @$ACCENTS
 }
 
-function gdmb () {
-	git diff $(git merge-base $1 $2) $2
-}
-
 function gfo () {
 	git fetch . origin/$1:$1
 }
