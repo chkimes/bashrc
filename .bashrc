@@ -14,6 +14,10 @@ alias gundo="git reset @^"
 alias gmc="find -name '*.orig' | xargs -r rm" #merge cleanup
 alias gfm="git fetch && gfo master"
 
+alias grepr='grep -rI --exclude-dir=.git --exclude=*.lcl'
+alias greprc='grep -rI --include="*.cs"'
+alias greprx='grep -rI --include="*.xml"'
+
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
 function gclean () {
 	CLEAN='git clean -f -x -d -e *.csproj.user -e *.pubxml.user -e _ReSharper* -e .vs/ -e ignored/'
