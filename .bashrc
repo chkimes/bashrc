@@ -60,3 +60,11 @@ function gfo () {
 function gfd () {
 	git fetch . `git rev-parse --abbrev-ref HEAD`:$1
 }
+
+# git push set upstream
+function gpsu () {
+    branch=$(git rev-parse --abbrev-ref @)
+    cmd="git push -u origin $branch:users/chkimes/$branch"
+    echo $cmd
+    eval $cmd
+}
