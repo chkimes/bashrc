@@ -17,7 +17,7 @@ alias gfm="git fetch && gfo master"
 alias grepr='grep -rI --exclude-dir=.git --exclude=*.lcl'
 alias greprc='grep -rI --include="*.cs"'
 alias greprx='grep -rI --include="*.xml"'
-alias greprdef='grep -rI --include="*.defaults"'
+alias greprdef='grep -rI --include="*.[Dd]efaults"'
 
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
 function gclean () {
