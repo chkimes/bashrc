@@ -10,6 +10,7 @@ alias gl="git log --graph --abbrev-commit --decorate --date=relative --format=fo
 alias gls="gl --simplify-by-decoration"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gdma='gd master...@'
 alias gundo="git reset @^"
 alias gmc="find -name '*.orig' | xargs -r rm" #merge cleanup
 alias gfm="git fetch && gfo master"
