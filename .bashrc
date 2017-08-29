@@ -14,6 +14,7 @@ alias gdma='gd master...@'
 alias gundo="git reset @^"
 alias gmc="find -name '*.orig' | xargs -r rm" #merge cleanup
 alias gfm="git fetch && gfo master"
+alias gfmc="gfm && git checkout master"
 
 alias grepr='grep -rI --exclude-dir=.git --exclude=*.lcl'
 alias greprc='grep -rI --include="*.cs"'
