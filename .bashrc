@@ -21,6 +21,8 @@ alias greprc='grep -rI --include="*.cs"'
 alias greprx='grep -rI --include="*.xml"'
 alias greprdef='grep -rI --include="*.[Dd]efaults"'
 
+alias pr='start firefox https://mseng.visualstudio.com/VSOnline/Cloud%20Social%20Platform/_git/VSO/pullrequests?_a=mine'
+
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
 function gclean () {
 	CLEAN='git clean -f -x -d -e *.csproj.user -e *.pubxml.user -e _ReSharper* -e .vs/ -e ignored/'
