@@ -24,6 +24,7 @@ alias greprdef='grep -rI --include="*.[Dd]efaults"'
 
 alias pr='start firefox https://mseng.visualstudio.com/VSOnline/Cloud%20Social%20Platform/_git/VSO/pullrequests?_a=mine'
 alias prcc='start firefox https://mseng.visualstudio.com/VSOnline/Cloud%20Social%20Platform/_git/VSO.ConfigChange/pullrequests?_a=mine'
+alias yolo='gc -a --amend --no-edit && git push -f'
 
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
 function gclean () {
