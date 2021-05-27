@@ -25,6 +25,7 @@ alias greprdef='grep -rI --include="*.[Dd]efaults"'
 alias pr='start firefox https://dev.azure.com/mseng/AzureDevOps/_git/AzureDevOps/pullrequests?_a=mine'
 alias prcc='start firefox https://dev.azure.com/mseng/AzureDevOps//_git/AzureDevOps.ConfigChange/pullrequests?_a=mine'
 alias prn='start firefox https://dev.azure.com/mseng/AzureDevOps/_git/AzDevNext/pullrequests?_a=mine'
+alias prd='start firefox https://dev.azure.com/mseng/AzDevNext.Deploy/_git/AzDevNext.Deploy/pullrequests?_a=mine'
 alias yolo='gc -a --amend --no-edit && git push -f'
 
 # gclean and gnuke functions courtesy of rspeele (github.com/rspeele)
