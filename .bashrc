@@ -1,4 +1,5 @@
 # Set up a simple prompt with directory and git info
+source ~/.bash_git
 PS1='\[\033]0;\w\007\]\n\[\033[0;32m\]- \w\[\033[0;36m\]`__git_ps1`\[\033[0m\]\n\[\033[1;30m\]$ \[\033[0m\]'
 
 alias gs="git status"
